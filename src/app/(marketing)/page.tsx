@@ -317,7 +317,7 @@ const HomePage = async () => {
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
                             <h2 className="bg-gradient-to-b from-neutral-200 to-neutral-400 py-4 bg-clip-text text-center text-4xl md:text-7xl !leading-[1.15] font-medium font-heading tracking-tight text-transparent mt-8">
-                            Reach Out to Troika Hub and Bring Your Vision to Life
+                            Reach Out to FutureFlow Hub and Bring Your Vision to Life
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
                             Whether you have a project in mind or just want to explore ideas, we&apos;re here to help make it happen.
