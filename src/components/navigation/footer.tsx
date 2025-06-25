@@ -16,11 +16,11 @@ const Footer = () => {
                             <img src="\icons\logo.png" alt="Logo" className="h-8 w-auto" />
                         </div>
                         <p className="text-muted-foreground mt-4 text-sm text-start">
-                           Join us in this wonderful project!
+                            Join us in this wonderful project!
                         </p>
                         <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                            Made by <Link href="" className="font-semibold ml-1">Sulaiman</Link> 
-                        </span> 
+                            Made by <Link href="" className="font-semibold ml-1">Sulaiman</Link>
+                        </span>
                     </div>
                     {/* todo put portfolio */}
                 </AnimationContainer>
@@ -143,14 +143,14 @@ const Footer = () => {
             <div className="mt-8 border-t border-border/40 pt-4 md:pt-8 md:flex md:items-center md:justify-between w-full">
                 <AnimationContainer delay={0.6}>
                     <p className="text-sm text-muted-foreground mt-8 md:mt-0">
-                        &copy; {new Date().getFullYear()} Troika Hub INC. All rights reserved.
+                        &copy; {new Date().getFullYear()} FutureFlow INC. All rights reserved.
                     </p>
                 </AnimationContainer>
             </div>
 
-            <div className="h-[20rem] lg:h-[20rem] hidden md:flex items-center justify-center">
-                <TextHoverEffect text="TROIKA" />
-            </div>
+            <div className="h-[20rem] lg:h-[20rem] text-sm hidden md:flex items-center justify-center">
+                <TextHoverEffect text="FutureFlow" />
+            </div>Behind FutureFlow
         </footer>
     )
 }

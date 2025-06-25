@@ -103,7 +103,7 @@ export const PLANS = [
         name: "Co-Founder",
         info: "Lead Creative Department",
         price: {
-            monthly: "Chaitayna.S ",
+            monthly: "Tej Hagargi",
             
         },
         Products: [
@@ -124,7 +124,7 @@ export const PLANS = [
         name: "Founder",
         info: "Lead Dev + CEO",
         price: {
-            monthly: "S Sulaiman",
+            monthly: "Sugandh R",
             
         },
         Products: [
@@ -145,7 +145,7 @@ export const PLANS = [
         name: "Co-Founder",
         info: "Founding Engineer",
         price: {
-            monthly: "Pratyush Bose",
+            monthly: "Ganesh Koparde",
             yearly: Math.round(49 * 12 * (1 - 0.12)),
         },
         Products: [
