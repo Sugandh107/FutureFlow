@@ -30,7 +30,7 @@ export const CARDS = [
                 </CardHeader>
                 <CardContent className="-mt-4">
                     <Label>
-                        Let's Build Something Amazing
+                        Lets Build Something Amazing
                     </Label>
                     <Input
                         type="file"

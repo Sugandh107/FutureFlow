@@ -4,6 +4,21 @@ import { cn } from "@/utils";
 import { motion } from "framer-motion";
 import { useEffect, useId, useRef, useState } from "react";
 
+// ✅ Helper function moved outside the component
+function generateSquares(
+    count: number,
+    dimensions: { width: number; height: number },
+    cellSize: number,
+) {
+    return Array.from({ length: count }, (_, i) => ({
+        id: i,
+        pos: [
+            Math.floor((Math.random() * dimensions.width) / cellSize),
+            Math.floor((Math.random() * dimensions.height) / cellSize),
+        ] as [number, number], // ✅ FIX: Assert the type as a tuple
+    }));
+}
+
 interface Props {
     width?: number;
     height?: number;
@@ -31,24 +46,11 @@ export function AnimatedBackground({
     ...props
 }: Props) {
     const id = useId();
-    const containerRef = useRef(null);
+    const containerRef = useRef<SVGSVGElement | null>(null);
     const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-    const [squares, setSquares] = useState(() => generateSquares(numSquares));
-
-    function getPos() {
-        return [
-            Math.floor((Math.random() * dimensions.width) / width),
-            Math.floor((Math.random() * dimensions.height) / height),
-        ];
-    }
-
-    // Adjust the generateSquares function to return objects with an id, x, and y
-    function generateSquares(count: number) {
-        return Array.from({ length: count }, (_, i) => ({
-            id: i,
-            pos: getPos(),
-        }));
-    }
+    const [squares, setSquares] = useState<{ id: number; pos: [number, number] }[]>(
+        [],
+    );
 
     // Function to update a single square's position
     const updateSquarePosition = (id: number) => {
@@ -56,23 +58,27 @@ export function AnimatedBackground({
             currentSquares.map((sq) =>
                 sq.id === id
                     ? {
-                        ...sq,
-                        pos: getPos(),
-                    }
+                          ...sq,
+                          pos: [
+                              Math.floor((Math.random() * dimensions.width) / width),
+                              Math.floor((Math.random() * dimensions.height) / height),
+                          ] as [number, number], // ✅ FIX: Assert the type as a tuple
+                      }
                     : sq,
             ),
         );
     };
 
-    // Update squares to animate in
+    // Update squares when dimensions or numSquares change
     useEffect(() => {
         if (dimensions.width && dimensions.height) {
-            setSquares(generateSquares(numSquares));
+            setSquares(generateSquares(numSquares, dimensions, width));
         }
-    }, [dimensions, numSquares]);
+    }, [dimensions, numSquares, width]);
 
     // Resize observer to update container dimensions
     useEffect(() => {
+        const element = containerRef.current;
         const resizeObserver = new ResizeObserver((entries) => {
             for (let entry of entries) {
                 setDimensions({
@@ -82,16 +88,16 @@ export function AnimatedBackground({
             }
         });
 
-        if (containerRef.current) {
-            resizeObserver.observe(containerRef.current);
+        if (element) {
+            resizeObserver.observe(element);
         }
 
         return () => {
-            if (containerRef.current) {
-                resizeObserver.unobserve(containerRef.current);
+            if (element) {
+                resizeObserver.unobserve(element);
             }
         };
-    }, [containerRef]);
+    }, []);
 
     return (
         <svg
@@ -123,6 +129,7 @@ export function AnimatedBackground({
             <svg x={x} y={y} className="overflow-visible">
                 {squares.map(({ pos: [x, y], id }, index) => (
                     <motion.rect
+                        key={`${id}-${index}`}
                         initial={{ opacity: 0 }}
                         animate={{ opacity: maxOpacity }}
                         transition={{
@@ -132,14 +139,12 @@ export function AnimatedBackground({
                             repeatType: "reverse",
                         }}
                         onAnimationComplete={() => updateSquarePosition(id)}
-                        key={`${x}-${y}-${index}`}
                         width={width - 1}
                         height={height - 1}
                         x={x * width + 1}
                         y={y * height + 1}
                         fill="currentColor"
                         strokeWidth="0"
-                    // opacity={0.5}
                     />
                 ))}
             </svg>

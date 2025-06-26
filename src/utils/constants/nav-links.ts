@@ -36,8 +36,8 @@ export const NAV_LINKS = [
         href: "/developers",
     },
     {
-        title: "Enterprise",
-        href: "/enterprise",
+        title: "Projects",
+        href: "/projects",
     },
     {
         title: "Resources",

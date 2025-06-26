@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { AnimationContainer, Icons } from "@/components"
 import { TextHoverEffect } from "@/components/ui/text-hover-effect"
+import Image from 'next/image';
 
 const Footer = () => {
     return (
@@ -13,7 +14,14 @@ const Footer = () => {
                 <AnimationContainer delay={0.1}>
                     <div className="flex flex-col items-start justify-start md:max-w-[200px]">
                         <div className="flex items-start">
-                            <img src="\icons\logo.png" alt="Logo" className="h-8 w-auto" />
+                            {/* ✅ Updated Image usage */}
+                            <Image
+                                src="/icons/logo.png"
+                                alt="Logo"
+                                width={32}
+                                height={32}
+                                className="h-8 w-auto"
+                            />
                         </div>
                         <p className="text-muted-foreground mt-4 text-sm text-start">
                             Join us in this wonderful project!
@@ -22,7 +30,6 @@ const Footer = () => {
                             Made by <Link href="" className="font-semibold ml-1">Sulaiman</Link>
                         </span>
                     </div>
-                    {/* todo put portfolio */}
                 </AnimationContainer>
 
                 <div className="grid-cols-2 gap-8 grid mt-16 xl:col-span-2 xl:mt-0">
