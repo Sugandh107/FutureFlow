@@ -148,9 +148,7 @@ const Footer = () => {
                 </AnimationContainer>
             </div>
 
-            <div className="h-[20rem] lg:h-[20rem] hidden md:flex items-center justify-center">
-                <TextHoverEffect text="TROIKA" />
-            </div>
+           
         </footer>
     )
 }
