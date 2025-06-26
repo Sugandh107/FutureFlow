@@ -33,7 +33,7 @@ const HomePage = async () => {
                             <span className="backdrop absolute inset-[1px] rounded-full bg-neutral-950 transition-colors duration-200 group-hover:bg-neutral-900" />
                             <span className="h-full w-full blur-md absolute bottom-0 inset-x-0 bg-gradient-to-tr from-primary/20"></span>
                             <span className="z-10 py-0.5 text-sm text-neutral-100 flex items-center justify-center gap-1">
-                                 Troika-Hub is now Live! 
+                                 We Code. You Grow. FutureFlow is Live!
                                 <ArrowRightIcon className="ml-1 size-3 transition-transform duration-300 ease-in-out group-hover:translate-x-0.5" />
                             </span>
                         </button>
@@ -43,14 +43,14 @@ const HomePage = async () => {
                             </span>
                         </h1> */}
                         <h1 className="text-foreground text-center py-6 text-5xl font-medium tracking-normal text-balance sm:text-6xl md:text-7xl lg:text-8xl !leading-[1.15] w-full font-heading">
-                        Where Innovation Meets <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
-                                Vision
+                        Design the Future <span className="text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500 bg-clip-text inline-bloc">
+                                Flow With Us
                             </span>
                         </h1>
                         <p className="mb-12 text-lg tracking-tight text-muted-foreground md:text-xl text-balance">
-                        Seamlessly blend design, technology, and imagination in one place.
+                        Where design, technology, and imagination converge.
                             <br className="hidden md:block" />
-                            <span className="hidden md:block">Crafting digital experiences that resonate, inspire, and endure.</span>
+                            <span className="hidden md:block">Building digital experiences that captivate, connect, and last.</span>
                         </p>
                         <div className="flex items-center justify-center whitespace-nowrap gap-4 z-50">
                             <Button asChild>
@@ -61,7 +61,7 @@ const HomePage = async () => {
                             </Button>
                         </div>
                     </AnimationContainer>
-
+{/* 
                     <AnimationContainer delay={0.2} className="relative pt-20 pb-20 md:py-32 px-2 bg-transparent w-full">
                         <div className="absolute md:top-[10%] left-1/2 gradient w-3/4 -translate-x-1/2 h-1/4 md:h-1/3 inset-0 blur-[5rem] animate-image-glow"></div>
                         <div className="-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
@@ -82,7 +82,7 @@ const HomePage = async () => {
                             <div className="absolute -bottom-4 inset-x-0 w-full h-1/2 bg-gradient-to-t from-background z-40"></div>
                             <div className="absolute bottom-0 md:-bottom-8 inset-x-0 w-full h-1/4 bg-gradient-to-t from-background z-50"></div>
                         </div>
-                    </AnimationContainer>
+                    </AnimationContainer> */}
                 </div>
             </MaxWidthWrapper >
 
@@ -140,12 +140,12 @@ const HomePage = async () => {
             {/* Process Section */}
             <MaxWidthWrapper className="py-10">
                 <AnimationContainer delay={0.1}>
-                    <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
+                <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
                         <MagicBadge title="The Process" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
                             From Concept to Creation in 3 Simple Steps                        </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
-                        At Troika Hub, we bring your ideas to life with a seamless, 3-step process designed for visionaries like you.
+                       From concept to launch, FutureFlow’s 3-step method makes Web/App development effortless and effective.
                         </p>
                     </div>
                 </AnimationContainer>
@@ -179,7 +179,7 @@ const HomePage = async () => {
                     <div className="flex flex-col items-center lg:items-center justify-center w-full py-8 max-w-xl mx-auto">
                         <MagicBadge title="Meet The Team" />
                         <h2 className="text-center lg:text-center text-3xl md:text-5xl !leading-[1.1] font-medium font-heading text-foreground mt-6">
-                        Meet the Visionaries Behind Troika Hub
+                        Meet the Visionaries Behind FutureFlow
                         </h2>
                         <p className="mt-4 text-center lg:text-center text-lg text-muted-foreground max-w-lg">
                         A talented team of creators, developers, and innovators working together to bring bold ideas to life.
@@ -194,7 +194,7 @@ const HomePage = async () => {
                         <div className="flex items-center gap-2">
                             <Triangle className="w-5 h-5 text-foreground" />
                             <span className="text-muted-foreground">
-                                Troika means a group of three in Russian, so its a symbol of unity among us three.
+                                FutureFlow symbolizes our vision to blend creativity, code, and innovation - flowing toward a better digital future.
                             </span>
                         </div>
                         
@@ -317,7 +317,7 @@ const HomePage = async () => {
                     <LampContainer>
                         <div className="flex flex-col items-center justify-center relative w-full text-center">
                             <h2 className="bg-gradient-to-b from-neutral-200 to-neutral-400 py-4 bg-clip-text text-center text-4xl md:text-7xl !leading-[1.15] font-medium font-heading tracking-tight text-transparent mt-8">
-                            Reach Out to Troika Hub and Bring Your Vision to Life
+                            Reach Out to FutureFlow Hub and Bring Your Vision to Life
                             </h2>
                             <p className="text-muted-foreground mt-6 max-w-md mx-auto">
                             Whether you have a project in mind or just want to explore ideas, we&apos;re here to help make it happen.
