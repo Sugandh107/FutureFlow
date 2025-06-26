@@ -155,6 +155,7 @@ const Footer = () => {
                 </AnimationContainer>
             </div>
 
+           
             <div className="h-[20rem] lg:h-[20rem] text-sm hidden md:flex items-center justify-center">
                 <TextHoverEffect text="FutureFlow" />
             </div>Behind FutureFlow

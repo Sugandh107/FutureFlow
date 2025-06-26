@@ -7,10 +7,13 @@ import {
 } from "@/components/ui/accordion";
 import MagicBadge from "@/components/ui/magic-badge";
 import { FAQ } from "@/utils/constants/faq";
-
+import { TextHoverEffect } from "@/components/ui/text-hover-effect"
 const PricingPage = () => {
     return (
         <MaxWidthWrapper className="mb-40">
+              <div className="h-[13rem] lg:h-[15rem]  hidden md:flex items-center justify-center">
+                     <TextHoverEffect text="FutureFlow" />
+                   </div>
             <AnimationContainer delay={0.1}>
                 <div className="flex flex-col items-center justify-center py-10 max-w-lg mx-auto">
                     <MagicBadge title="The Team" />
