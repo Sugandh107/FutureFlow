@@ -2,37 +2,53 @@ import React from 'react'
 import AnimationContainer from "@/components/global/animation-container";
 import { BorderBeam } from "@/components/ui/border-beam";
 import Image from "next/image";
+import projects from "@/data/projects"; // Assuming you have a projects data file
 
 const EnterprisePage = () => {
-    const projects = [
-        {
-            id: 1,
-            title: "E-Commerce Platform",
-            description: "A modern, fully responsive e-commerce solution built with React, Next.js, and Stripe integration. Features include real-time inventory management, advanced search filters, and seamless checkout experience.",
-            image: "/assets/projectSkod.png",
-            technologies: ["React", "Next.js", "Stripe", "Tailwind CSS"],
-            category: "E-Commerce",
-            borderColor: "from-blue-500 to-purple-600"
-        },
-        {
-            id: 2,
-            title: "SaaS Dashboard",
-            description: "An intuitive SaaS dashboard with advanced analytics, user management, and real-time data visualization. Built for scalability and performance with modern web technologies.",
-            image: "/assets/projectClbase.png",
-            technologies: ["Vue.js", "Node.js", "MongoDB", "Chart.js"],
-            category: "SaaS",
-            borderColor: "from-emerald-500 to-teal-600"
-        },
-        {
-            id: 2,
-            title: "SaaS Dashboard",
-            description: "An intuitive SaaS dashboard with advanced analytics, user management, and real-time data visualization. Built for scalability and performance with modern web technologies.",
-            image: "/assets/projectSmartrecruit.png",
-            technologies: ["Vue.js", "Node.js", "MongoDB", "Chart.js"],
-            category: "SaaS",
-            borderColor: "from-emerald-500 to-teal-600"
-        }
-    ];
+    // const projects = [
+    //     {
+    //         id: 1,
+    //         title: "Cyber Security Learning Platform - SkodCyber",
+    //         description: "A fully-fledged cyber security education platform designed for learners to enhance their skills through video-based learning, interactive quizzes, structured modules, and insightful blogs. Users can progress through courses, test their understanding with assessments, and stay updated with the latest in cyber security.",
+    //         image: "/assets/projectSkod.png", // You can replace this with an actual image path
+    //         technologies: ["React", "Next.js", "MongoDB", "Tailwind CSS", "Socket.io", "Cloudinary"],
+    //         category: "EdTech / Cyber Security",
+    //         borderColor: "from-red-500 to-amber-600",
+    //         live: "https://skod-cyber.vercel.app/",
+    //     },
+    //     {
+    //         id: 2,
+    //         title: "Upskill Academy – Professional IT Training Platform",
+    //         description: "Upskill Academy offers industry-focused training programs designed to equip learners with in-demand skills in Web Development, Cloud Computing, Business Analytics, Digital Media, Database Management, Networking, and more. Courses range from 2 to 6 months with a focus on hands-on learning and real-world application.",
+    //         image: "/assets/upskill.png", // Make sure the image path is correct
+    //         technologies: ["Vue.js", "Node.js", "MongoDB", "Chart.js"],
+    //         category: "EdTech / IT Training",
+    //         borderColor: "from-sky-500 to-indigo-600",
+    //         live: "https://upskilldigitalacademy.vercel.app/"
+    //     },
+    //     {
+    //         id: 3,
+    //         title: "MediCare – Hospital Management System",
+    //         description: "MediCare is a comprehensive hospital management system built using the MERN stack. It streamlines hospital operations with secure authentication, appointment scheduling, patient records, real-time doctor-patient communication, and a powerful admin dashboard. Designed for scalability and ease of use, MediCare enhances healthcare efficiency and improves the overall patient experience.",
+    //         image: "/assets/medicare.png", // Replace with your actual image path
+    //         technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT"],
+    //         category: "Healthcare / Management System",
+    //         borderColor: "from-green-500 to-cyan-600",
+    //         live: "https://medicare-ai-frontend.vercel.app/" // Replace with actual deployed URL
+    //     },
+    //     {
+    //         id: 4,
+    //         title: "SmartRecruit: AI-Powered Recruitment System",
+    //         description: "SmartRecruit is an open-source recruitment platform that revolutionizes the hiring process using automation and intelligent technologies. It features aptitude auto-validation with cheat detection, a multi-language coding assessment system, HR video interviews, real-time face monitoring, and automated candidate communication. Designed to eliminate inefficiencies and ensure assessment integrity.",
+    //         image: "/assets/projectSmartrecruit.png", // Update path if needed
+    //         technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "Cloudinary"],
+    //         category: "Recruitment Tech / Automation",
+    //         borderColor: "from-rose-500 to-indigo-600",
+    //         live: "https://smartrecruit.vercel.app/"
+    //     },
+
+
+    // ];
 
     return (
 
@@ -70,7 +86,7 @@ const EnterprisePage = () => {
 
                                 {/* Live Project Link */}
                                 <div className="pt-2">
-                                    <a href="#" className="inline-flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors duration-300">
+                                    <a href={project.live} className="inline-flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors duration-300">
                                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                             <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
                                         </svg>
@@ -92,24 +108,12 @@ const EnterprisePage = () => {
 
                                     <div className="relative aspect-video bg-gradient-to-br from-gray-100 to-gray-200 dark:from-gray-800 dark:to-gray-900 rounded-md lg:rounded-xl bg-foreground/10 ring-1 ring-border overflow-hidden">
                                         {/* Placeholder for project image */}
-                                            <Image
-                                                src={project.image}
-                                                alt={project.title}
-                                                fill
-                                                className="object-cover rounded-md lg:rounded-xl"
-                                            />
-
-
-
-                                        {/* Uncomment when you have actual images */}
-                                        {/* <Image
+                                        <Image
                                             src={project.image}
                                             alt={project.title}
-                                            width={1200}
-                                            height={1200}
-                                            quality={100}
-                                            className="rounded-md lg:rounded-xl bg-foreground/10 ring-1 ring-border"
-                                        /> */}
+                                            fill
+                                            className="object-cover rounded-md lg:rounded-xl"
+                                        />
                                     </div>
 
                                     <div className="absolute -bottom-4 inset-x-0 w-full h-1/2 bg-gradient-to-t from-background z-40"></div>
