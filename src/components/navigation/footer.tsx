@@ -24,10 +24,10 @@ const Footer = () => {
                             />
                         </div>
                         <p className="text-muted-foreground mt-4 text-sm text-start">
-                            Join us in this wonderful project!
+                            We are here to build for you!
                         </p>
                         <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                            Made by <Link href="" className="font-semibold ml-1">Sulaiman</Link>
+                            Made by team<Link href="" className="font-semibold ml-1">FutureFlow</Link>
                         </span>
                     </div>
                 </AnimationContainer>
