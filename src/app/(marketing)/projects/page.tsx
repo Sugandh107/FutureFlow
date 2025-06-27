@@ -1,46 +1,16 @@
-'use client';
 import React from 'react'
-import { motion } from 'framer-motion'
 import AnimationContainer from "@/components/global/animation-container";
 import { BorderBeam } from "@/components/ui/border-beam";
 import Image from "next/image";
 import projects from "@/data/projects"; // Assuming you have a projects data file
 
 const EnterprisePage = () => {
-    // Animation variants for word-by-word text reveal
-    const wordVariants = {
-        hidden: {
-            opacity: 0,
-            y: 20,
-        },
-        visible: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                duration: 0.1,
-                ease: "easeOut",
-            }
-        }
-    };
-
-    const containerVariants = {
-        hidden: {},
-        visible: {
-            transition: {
-                staggerChildren: 0.1
-            }
-        }
-    };
-
-    // Function to split text into words
-     const splitIntoWords = (text: string) => {
-        return text.split(' ');
-    };
 
     return (
+
         <div className="flex flex-col items-center justify-center py-16 px-4">
             <AnimationContainer delay={0.1}>
-                <div className="text-center mb-16">
+                <div className="text-center mb-4">
                     <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-center !leading-tight">
                         Crafting Digital
                         <span className="bg-gradient-to-r from-blue-600 via-purple-600 to-teal-600 bg-clip-text text-transparent"> Excellence</span>
@@ -62,72 +32,30 @@ const EnterprisePage = () => {
                         <div className="grid lg:grid-cols-2 gap-8 items-center">
                             {/* Project Info */}
                             <div className={`${index % 2 === 1 ? 'lg:order-2' : ''} space-y-4`}>
-                                {/* Animated Title */}
-                                <motion.h2
-                                    variants={containerVariants}
-                                    initial="hidden"
-                                    whileInView="visible"
-                                    viewport={{ once: true, amount: 0.3 }}
-                                    className="text-2xl md:text-3xl font-bold font-heading"
-                                >
-                                    {splitIntoWords(project.title).map((word, wordIndex) => (
-                                        <motion.span
-                                            key={wordIndex}
-                                            variants={wordVariants}
-                                            className="inline-block mr-2"
-                                        >
-                                            {word}
-                                        </motion.span>
-                                    ))}
-                                </motion.h2>
+                                <h2 className="text-2xl md:text-3xl font-bold font-heading">
+                                    {project.title}
+                                </h2>
 
-                                {/* Animated Description */}
-                                <motion.p
-                                    variants={containerVariants}
-                                    initial="hidden"
-                                    whileInView="visible"
-                                    viewport={{ once: true, amount: 0.3 }}
-                                    className="text-base md:text-lg text-muted-foreground leading-relaxed"
-                                >
-                                    {splitIntoWords(project.description).map((word, wordIndex) => (
-                                        <motion.span
-                                            key={wordIndex}
-                                            variants={wordVariants}
-                                            className="inline-block mr-1"
-                                        >
-                                            {word}
-                                        </motion.span>
-                                    ))}
-                                </motion.p>
+                                <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+                                    {project.description}
+                                </p>
 
                                 {/* Live Project Link */}
-                                <motion.div 
-                                    className="pt-2"
-                                    initial={{ opacity: 0, y: 20 }}
-                                    whileInView={{ opacity: 1, y: 0 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.4, delay: 0.3 }}
-                                >
+                                <div className="pt-2">
                                     <a href={project.live} className="inline-flex items-center space-x-2 text-muted-foreground hover:text-foreground transition-colors duration-300">
                                         <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
                                             <path fillRule="evenodd" d="M12.586 4.586a2 2 0 112.828 2.828l-3 3a2 2 0 01-2.828 0 1 1 0 00-1.414 1.414 4 4 0 005.656 0l3-3a4 4 0 00-5.656-5.656l-1.5 1.5a1 1 0 101.414 1.414l1.5-1.5zm-5 5a2 2 0 012.828 0 1 1 0 101.414-1.414 4 4 0 00-5.656 0l-3 3a4 4 0 105.656 5.656l1.5-1.5a1 1 0 10-1.414-1.414l-1.5 1.5a2 2 0 11-2.828-2.828l3-3z" clipRule="evenodd" />
                                         </svg>
                                         <span className="text-sm font-medium">View Live Project</span>
                                     </a>
-                                </motion.div>
+                                </div>
                             </div>
 
                             {/* Project Image with Border Animation */}
                             <div className={`${index % 2 === 1 ? 'lg:order-1' : ''} relative pt-8 pb-8 md:py-12 px-2 bg-transparent w-full`}>
                                 <div className="absolute md:top-[10%] left-1/2 gradient w-3/4 -translate-x-1/2 h-1/4 md:h-1/3 inset-0 blur-[5rem] animate-image-glow"></div>
 
-                                <motion.div 
-                                    className="-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl"
-                                    initial={{ opacity: 0, scale: 0.9 }}
-                                    whileInView={{ opacity: 1, scale: 1 }}
-                                    viewport={{ once: true }}
-                                    transition={{ duration: 0.6, delay: 0.2 }}
-                                >
+                                <div className="-m-2 rounded-xl p-2 ring-1 ring-inset ring-foreground/20 lg:-m-4 lg:rounded-2xl bg-opacity-50 backdrop-blur-3xl">
                                     <BorderBeam
                                         size={250}
                                         duration={12}
@@ -146,7 +74,7 @@ const EnterprisePage = () => {
 
                                     <div className="absolute -bottom-4 inset-x-0 w-full h-1/2 bg-gradient-to-t from-background z-40"></div>
                                     <div className="absolute bottom-0 md:-bottom-8 inset-x-0 w-full h-1/4 bg-gradient-to-t from-background z-50"></div>
-                                </motion.div>
+                                </div>
                             </div>
                         </div>
                     </AnimationContainer>
