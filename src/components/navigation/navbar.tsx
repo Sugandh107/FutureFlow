@@ -18,6 +18,7 @@ import React, { useEffect, useState } from 'react';
 import MaxWidthWrapper from "../global/max-width-wrapper";
 import MobileNavbar from "./mobile-navbar";
 import AnimationContainer from "../global/animation-container";
+import Image from 'next/image';
 
 const Navbar = () => {
 
@@ -49,12 +50,15 @@ const Navbar = () => {
                 <MaxWidthWrapper className="flex items-center justify-between">
                     <div className="flex items-center space-x-12">
                         <Link href="/#home">
-                            <span className="text-lg font-bold font-heading !leading-none">
-                               
-                            <img src="\icons\logo.png" alt="Logo" className="h-8 w-8 mr-2 inline-block filter invert" />
-
+                            <span className="text-lg font-bold font-heading !leading-none flex items-center">
+                                <Image
+                                    src="/icons/logo.png"
+                                    alt="Logo"
+                                    width={32}
+                                    height={32}
+                                    className="h-8 w-8 mr-2 filter invert"
+                                />
                                 FutureFlow
-                            
                             </span>
                         </Link>
 
@@ -127,7 +131,7 @@ const Navbar = () => {
                                 <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=troikahub@gmail.com" className={buttonVariants({ size: "sm", variant: "ghost" })}>
                                     Wishlist
                                 </Link>
-                                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=troikahub@gmail.com" className={buttonVariants({ size: "sm", })}> 
+                                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=troikahub@gmail.com" className={buttonVariants({ size: "sm", })}>
                                     Get in Touch
                                     <ZapIcon className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />
                                 </Link>
