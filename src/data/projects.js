@@ -98,14 +98,43 @@ const projects = [
   {
     id: 8,
     title: "DriveNow: Car Booking Platform MVP",
-    description: "DriveNow is a minimum viable product (MVP) built for a client to streamline car booking experiences. The platform features an interactive map to browse available cars, real-time data updates, multilingual support, and secure payment integration. Designed with a focus on speed, accessibility, and ease of use for users across regions.",
+    description:
+      "DriveNow is a minimum viable product (MVP) built for a client to streamline car booking experiences. The platform features an interactive map to browse available cars, real-time data updates, multilingual support, and secure payment integration. Designed with a focus on speed, accessibility, and ease of use for users across regions.",
     image: "/assets/carbooking.jpg",
-    technologies: ["React.js", "Node.js", "Socket.io", "MongoDB", "Google Maps API", "Stripe"],
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Socket.io",
+      "MongoDB",
+      "Google Maps API",
+      "Stripe",
+    ],
     category: "Mobility / Real-Time Platforms",
     borderColor: "from-teal-500 to-cyan-600",
-    live: "#"
-}
-
+    live: "#",
+  },
+  {
+    id: 9,
+    title: "TripBud: Hotel And Flight Booking Platform",
+    description:
+      "TripBud is an all-in-one travel platform that lets users seamlessly book hotels and flights, while also enabling them to discover and connect with travel buddies. Whether you’re planning a solo trip or looking for companions with shared destinations and interests, TripBud helps you plan smarter, travel safer, and explore better — together.",
+    image: "/assets/tripbud.png",
+    technologies: ["React.js", "Node.js", "MongoDB", "Hotel API", "Flight API"],
+    category: "Mobility / Real-Time Platforms",
+    borderColor: "from-teal-500 to-cyan-600",
+    live: "https://tripbud.vercel.app/",
+  },
+  {
+    id: 10,
+    title: "Manashakti: Dr Conusltation Website",
+    description:
+      "A modern and responsive web application designed to simplify doctor-patient interactions by allowing users to easily book medical appointments online. Patients can browse available doctors, view their profiles and availability, and schedule consultations with just a few clicks.",
+    image: "/assets/manashakti.png",
+    technologies: ["React.js","Tailwind CSS"],
+    category: "Mobility / Real-Time Platforms",
+    borderColor: "from-teal-500 to-cyan-600",
+    live: "https://manashakti.info/",
+  },
 ];
 
 export default projects;
