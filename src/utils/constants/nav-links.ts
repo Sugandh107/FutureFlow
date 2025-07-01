@@ -58,7 +58,7 @@ export const NAV_LINKS = [
         ]
     },
     {
-        title: "Changelog",
-        href: "/changelog",
+        title: "Services",
+        href: "/services",
     },
 ];
