@@ -237,7 +237,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://www.linkedin.com/company/troika-hub",
+      href: "#",
       target: "_blank",
     },
     
@@ -247,7 +247,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandX className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://x.com/TroikaHub",
+      href: "#",
       target: "_blank",
     },
     {
@@ -255,7 +255,7 @@ export function FloatingDockDemo() {
       icon: (
         <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
-      href: "https://github.com/Troika-Hub",
+      href: "https://github.com/Sugandh107/FutureFlow",
       target: "_blank",
     },
   ];

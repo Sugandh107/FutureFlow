@@ -128,10 +128,10 @@ const Navbar = () => {
                             </div>
                         ) : (
                             <div className="flex items-center gap-x-4">
-                                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=troikahub@gmail.com" className={buttonVariants({ size: "sm", variant: "ghost" })}>
+                                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=futureflow.dev.2025@gmail.com" className={buttonVariants({ size: "sm", variant: "ghost" })}>
                                     Wishlist
                                 </Link>
-                                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=troikahub@gmail.com" className={buttonVariants({ size: "sm", })}>
+                                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=futureflow.dev.2025@gmail.com" className={buttonVariants({ size: "sm", })}>
                                     Get in Touch
                                     <ZapIcon className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />
                                 </Link>

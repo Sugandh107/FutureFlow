@@ -99,70 +99,71 @@
 
 // export const WORKSPACE_LIMIT = 2;
 export const PLANS = [
-    {
-        name: "Co-Founder",
-        info: "Lead Creative Department",
-        price: {
-            monthly: "Tej Hagargi",
-            
-        },
-        Products: [
-            { text: "Lead Designer & SM Manager" },
-            { text: "1.5+ Years of Experience", tooltip:"Specialized in 3D, VFX and Logo illustrations and Photoshop" },
-            { text: "Projects Built", tooltip:"McLaren 720S, Star Wars TIE Fighter, Space Marine, iPhone mock adverts, and other groundbreaking 3D creations." },
-            { text: "Previous Roles", tooltip: "IIDE Digital Marketting Intern" },
-            { text: "Blender Artist", },
-            { text: "Tech Stack", tooltip: "Blender, Adobe Illustrator, Adobe after effects, Adobe premiere pro, Adobe photoshop, Autodesk Maya" },
-        ],
-        btn: {
-            text: "Contact",
-            href: "https://www.linkedin.com/in/chaitanyasardana/",//portfolio todo
-            variant: "default",
-        }
+  {
+    name: "Co-Founder",
+    info: "Frontend & Mobile Developer",
+    price: {
+      monthly: "Tej Hagargi",
+      yearly: "Tej Hagargi",
     },
-    {
-        name: "Founder",
-        info: "Lead Dev + CEO",
-        price: {
-            monthly: "Sugandh R",
-            
-        },
-        Products: [
-            { text: "Lead Developer & Creator" },
-            { text: "4+ Years of Experience", tooltip:"Specialized in building SaaS platforms and Designing Websites"},
-            { text: "Projects Built", tooltip:"Inquirix, Optix, Conferix, and other innovative tech solutions." },
-            { text: "Previous Roles", tooltip: "Interned at Deloitte and Capgemini; Worked at early stage government funded startups." },
-            { text: " Web3 & Full Stack Developer"},
-            { text: "Tech Stack", tooltip: "TypeScript React TRPC AWS Azure Next.js Rust/Solana Three.js GoLang and Various Databases and ORMs" },
-        ],
-        btn: {
-            text: "Contact",
-            href: "https://sulaiweb.me/",//Portfolio todo lol
-            variant: "purple",
-        }
+    Products: [
+      { text: "Frontend & React Native Developer" },
+      { text: "1.5+ Years of Experience", tooltip: "Skilled in crafting responsive and interactive UIs for web and mobile" },
+      { text: "Projects Built", tooltip: "3D landing pages, product showcases, and dynamic UI animations" },
+      { text: "Mobile Development", tooltip: "React Native (Expo), mobile-first design systems" },
+      { text: "Web Development", tooltip: "Next.js, TypeScript, Tailwind CSS, Framer Motion" },
+      { text: "Tech Stack", tooltip: "React, React Native, Next.js, Tailwind, Three.js, Blender, Git, Figma" },
+    ],
+    btn: {
+      text: "Contact",
+      href: "https://www.linkedin.com/in/tej-hagargi-/",
+      variant: "default",
     },
-    {
-        name: "Co-Founder",
-        info: "Founding Engineer",
-        price: {
-            monthly: "Ganesh Koparde",
-            yearly: Math.round(49 * 12 * (1 - 0.12)),
-        },
-        Products: [
-            { text: "CTO & Project Lead" },
-            { text: "2 Years of Experience", tooltip:"Specialized in cloud infrastructure and databse management"},
-            { text: "Projects Built", tooltip:"AI SaaS platform, Trading website, AI resume builder, Android to-do app, and other next-gen tech solutions." },
-            { text: "Previous Roles", tooltip: "Codemithra Intern" },
-            { text: "Full Stack Developer",},
-            { text: "Tech Stack", tooltip: "Java, SQL, Next.js, Tailwind, Typescript, Prismadb, MongoDB, AWS" },
-        ],
-        btn: {
-            text: "Contact",
-            href: "www.linkedin.com/in/pratyush-bose",//portfolio todo lol
-            variant: "default",
-        }
-    }
+  },
+  {
+    name: "Founder",
+    info: "Backend & Cloud Developer",
+    price: {
+      monthly: "Sugandh R",
+      yearly: "Sugandh R",
+    },
+    Products: [
+      { text: "Full Stack & Cloud Developer" },
+      { text: "2+ Years of Experience", tooltip: "Expertise in building robust backend systems and deploying scalable apps" },
+      { text: "Projects Built", tooltip: "Inquirix, Optix, Conferix, and multiple SaaS products" },
+      { text: "Cloud & DevOps", tooltip: "Worked with AWS, CI/CD pipelines, Docker, and deployment automation" },
+      { text: "Web & API Development", tooltip: "Secure auth systems, REST/GraphQL APIs, serverless functions" },
+      { text: "Tech Stack", tooltip: "Next.js, Node.js, TRPC, PostgreSQL, TypeScript, AWS, Docker, GitHub Actions" },
+    ],
+    btn: {
+      text: "Contact",
+      href: "https://www.linkedin.com/in/sugandh-revankar-698968225/",
+      variant: "purple",
+    },
+  },
+  {
+    name: "Co-Founder",
+    info: "Full Stack Web & App Developer",
+    price: {
+      monthly: "Ganesh Koparde",
+        yearly: "Ganesh Koparde",
+    },
+    Products: [
+      { text: "Full Stack Developer" },
+      { text: "2+ Years of Experience", tooltip: "Experience in both frontend and backend development for web & mobile apps" },
+      { text: "Projects Built", tooltip: "AI SaaS tools, trading platforms, resume builder, and full-stack apps" },
+      { text: "Web & App Development", tooltip: "Responsive web UIs, backend APIs, and integrated mobile features" },
+      { text: "Frontend + Backend Skills", tooltip: "Authentication systems, database modeling, API integrations" },
+      { text: "Tech Stack", tooltip: "React, Next.js, Node.js, TypeScript, Prisma, MongoDB, PostgreSQL, Git" },
+    ],
+    btn: {
+      text: "Contact",
+      href: "https://www.linkedin.com/in/ganesh-koparde/",
+      variant: "default",
+    },
+  },
 ];
+
 
 export const PRICING_Products = [
     {
