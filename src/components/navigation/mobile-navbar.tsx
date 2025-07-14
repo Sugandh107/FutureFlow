@@ -14,14 +14,15 @@ import {
     SheetTrigger
 } from "@/components/ui/sheet";
 import { cn, NAV_LINKS } from "@/utils";
-import { useAuth } from "@clerk/nextjs";
-import { LucideIcon, Menu, X } from "lucide-react";
+import { useAuth, useClerk } from "@clerk/nextjs";
+import { LucideIcon, Menu, X, ZapIcon } from "lucide-react";
 import Link from "next/link";
 import React, { useState } from 'react';
 
 const MobileNavbar = () => {
 
     const { isSignedIn, signOut } = useAuth();
+    const { user } = useClerk();
 
     const [isOpen, setIsOpen] = useState<boolean>(false);
 
@@ -44,7 +45,7 @@ const MobileNavbar = () => {
                         </Button>
                     </SheetClose>
                     <div className="flex flex-col items-start w-full py-2 mt-10">
-                        <div className="flex items-center justify-evenly w-full space-x-2">
+                        {/* <div className="flex items-center justify-evenly w-full space-x-2">
                             {isSignedIn ? (
                                 <Link href="/dashboard" className={buttonVariants({ variant: "outline", className: "w-full" })}>
                                     Dashboard
@@ -59,12 +60,12 @@ const MobileNavbar = () => {
                                     </Link>
                                 </>
                             )}
-                        </div>
+                        </div> */}
                         <ul className="flex flex-col items-start w-full mt-6">
                             <Accordion type="single" collapsible className="!w-full">
                                 {NAV_LINKS.map((link) => (
                                     <AccordionItem key={link.title} value={link.title} className="last:border-none">
-                                        {link.menu ? (
+                                        {/* {link.menu ? (
                                             <>
                                                 <AccordionTrigger>
                                                     {link.title}
@@ -84,20 +85,41 @@ const MobileNavbar = () => {
                                                     </ul>
                                                 </AccordionContent>
                                             </>
-                                        ) : (
-                                            <Link
-                                                href={link.href}
-                                                onClick={handleClose}
-                                                className="flex items-center w-full py-4 font-medium text-muted-foreground hover:text-foreground"
-                                            >
-                                                <span>{link.title}</span>
-                                            </Link>
-                                        )}
+                                        ) : ( */}
+                                        <Link
+                                            href={link.href}
+                                            onClick={handleClose}
+                                            className="flex items-center w-full py-4 font-medium text-muted-foreground hover:text-foreground"
+                                        >
+                                            <span>{link.title}</span>
+                                        </Link>
+                                        {/* )} */}
                                     </AccordionItem>
                                 ))}
                             </Accordion>
                         </ul>
+                        <div className="mt-6 lg:flex items-center">
+                            {user ? (
+                                <div className="flex items-center">
+                                    <Link href="/dashboard" className={buttonVariants({ size: "sm", })}>
+                                        Dashboard
+                                    </Link>
+                                </div>
+                            ) : (
+                                <div className="flex items-center gap-x-4">
+                                    {/* <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=futureflow.dev.2025@gmail.com" className={buttonVariants({ size: "sm", variant: "ghost" })}>
+                                    Wishlist
+                                </Link> */}
+                                    <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=futureflow.dev.2025@gmail.com" className={buttonVariants({ size: "sm", })}>
+                                        Get in Touch
+                                        <ZapIcon className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />
+                                    </Link>
+                                </div>
+                            )}
+                            {/* todo */}
+                        </div>
                     </div>
+
                 </SheetContent>
             </Sheet>
         </div>

@@ -107,11 +107,11 @@ export const PLANS = [
       yearly: "Tej Hagargi",
     },
     Products: [
-      { text: "Frontend & React Native Developer" },
+      { text: "MERN Stack & App Developer " },
       { text: "1.5+ Years of Experience", tooltip: "Skilled in crafting responsive and interactive UIs for web and mobile" },
-      { text: "Projects Built", tooltip: "3D landing pages, product showcases, and dynamic UI animations" },
+      { text: "8+ Projects Built", tooltip: "3D landing pages, product showcases, and dynamic UI animations" },
       { text: "Mobile Development", tooltip: "React Native (Expo), mobile-first design systems" },
-      { text: "Web Development", tooltip: "Next.js, TypeScript, Tailwind CSS, Framer Motion" },
+      { text: "Web Development", tooltip: "React, Node.js, MongoDB, Express, Tailwind CSS, Framer Motion" },
       { text: "Tech Stack", tooltip: "React, React Native, Next.js, Tailwind, Three.js, Blender, Git, Figma" },
     ],
     btn: {
@@ -130,7 +130,7 @@ export const PLANS = [
     Products: [
       { text: "Full Stack & Cloud Developer" },
       { text: "2+ Years of Experience", tooltip: "Expertise in building robust backend systems and deploying scalable apps" },
-      { text: "Projects Built", tooltip: "Inquirix, Optix, Conferix, and multiple SaaS products" },
+      { text: "10+ Projects Built", tooltip: "Inquirix, Optix, Conferix, and multiple SaaS products" },
       { text: "Cloud & DevOps", tooltip: "Worked with AWS, CI/CD pipelines, Docker, and deployment automation" },
       { text: "Web & API Development", tooltip: "Secure auth systems, REST/GraphQL APIs, serverless functions" },
       { text: "Tech Stack", tooltip: "Next.js, Node.js, TRPC, PostgreSQL, TypeScript, AWS, Docker, GitHub Actions" },
@@ -149,9 +149,9 @@ export const PLANS = [
         yearly: "Ganesh Koparde",
     },
     Products: [
-      { text: "Full Stack Developer" },
+      { text: "Full Stack Web/App Developer" },
       { text: "2+ Years of Experience", tooltip: "Experience in both frontend and backend development for web & mobile apps" },
-      { text: "Projects Built", tooltip: "AI SaaS tools, trading platforms, resume builder, and full-stack apps" },
+      { text: "9+ Projects Built", tooltip: "AI SaaS tools, trading platforms, resume builder, and full-stack apps" },
       { text: "Web & App Development", tooltip: "Responsive web UIs, backend APIs, and integrated mobile features" },
       { text: "Frontend + Backend Skills", tooltip: "Authentication systems, database modeling, API integrations" },
       { text: "Tech Stack", tooltip: "React, Next.js, Node.js, TypeScript, Prisma, MongoDB, PostgreSQL, Git" },

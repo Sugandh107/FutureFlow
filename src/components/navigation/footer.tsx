@@ -8,28 +8,21 @@ const Footer = () => {
     <footer className="flex flex-col relative items-center justify-center border-t border-border pt-16 pb-8 md:pb-0 px-6 lg:px-8 w-full max-w-6xl mx-auto lg:pt-32 bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/8%),transparent)]">
       <div className="absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-1.5 bg-foreground rounded-full"></div>
 
-            <div className="grid gap-8 xl:grid-cols-3 xl:gap-8 w-full">
+      <div className="grid gap-8 xl:grid-cols-3 xl:gap-8 w-full">
 
-                <AnimationContainer delay={0.1}>
-                    <div className="flex flex-col items-start justify-start md:max-w-[200px]">
-                        <div className="flex items-start">
-                            {/* ✅ Updated Image usage */}
-                            <Image
-                                src="/icons/logo.png"
-                                alt="Logo"
-                                width={32}
-                                height={32}
-                                className="h-8 w-auto"
-                            />
-                        </div>
-                        <p className="text-muted-foreground mt-4 text-sm text-start">
-                            We are here to build for you!
-                        </p>
-                        <span className="mt-4 text-neutral-200 text-sm flex items-center">
-                            Made by team<Link href="" className="font-semibold ml-1">FutureFlow</Link>
-                        </span>
-                    </div>
-                </AnimationContainer>
+        <AnimationContainer delay={0.1}>
+          <div className="flex flex-col items-start justify-start md:max-w-[200px]">
+            <div className="flex items-start">
+              <Icons.logo className="w-8 h-8 mr-2" />
+            </div>
+            <p className="text-muted-foreground mt-4 text-sm text-start">
+              We are here to build for you!
+            </p>
+            <span className="mt-4 text-neutral-200 text-sm flex items-center">
+              Made by team<Link href="" className="font-semibold ml-1">FutureFlow</Link>
+            </span>
+          </div>
+        </AnimationContainer>
 
         <div className="grid-cols-2 gap-8 grid mt-16 xl:col-span-2 xl:mt-0">
           <div className="md:grid md:grid-cols-2 md:gap-8">
