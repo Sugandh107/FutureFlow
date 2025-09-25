@@ -95,13 +95,13 @@ export const REVIEWS = [
         review: "Inquirix has made studying PDFs a game-changer. Now, I can interact with content and get answers instantly. Love the simplicity!"
     },
 
-    // Troika Hub (3D & VFX by Chaitanya) Review
+    // FutureFlow (3D & VFX by Chaitanya) Review
     {
         name: "Olivia Turner",
         username: "@olivia_turner",
         avatar: "https://randomuser.me/api/portraits/women/8.jpg",
         rating: 5,
-        review: "Troika Hub’s 3D models are on another level! Chaitanya’s work helped our project come alive. Phenomenal detail and artistry."
+        review: "FutureFlow’s 3D models are on another level! Chaitanya’s work helped our project come alive. Phenomenal detail and artistry."
     },
 
     // Conferix Review
@@ -131,13 +131,13 @@ export const REVIEWS = [
         review: "Very intuitive and powerful automation. Still learning some features, but it’s already streamlined my work."
     },
 
-    // Troika Hub (3D & VFX by Chaitanya) Review
+    // FutureFlow (3D & VFX by Chaitanya) Review
     {
         name: "Ethan Wright",
         username: "@ethan_wright",
         avatar: "https://randomuser.me/api/portraits/men/9.jpg",
         rating: 5,
-        review: "Can’t recommend Troika Hub enough for VFX. Their team goes above and beyond to deliver stunning visuals. Thank you!"
+        review: "Can’t recommend FutureFlow enough for VFX. Their team goes above and beyond to deliver stunning visuals. Thank you!"
     },
 
     // Inquirix Review

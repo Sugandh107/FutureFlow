@@ -12,7 +12,7 @@ const TermsPage = () => {
                     Last updated: 10th November 2024
                 </p>
                 <p className="mt-4">
-                    Welcome to Troika Hub. These terms and conditions outline the rules and regulations for the use of Troika Hub&apos;s website and services.
+                    Welcome to FutureFlow. These terms and conditions outline the rules and regulations for the use of FutureFlow&apos;s website and services.
                 </p>
 
                 <h2 className="text-xl font-medium mt-8">
@@ -20,14 +20,14 @@ const TermsPage = () => {
                 </h2>
 
                 <p className="mt-8 text-muted-foreground">
-                    By accessing and using Troika Hub, you accept and agree to be bound by these terms and conditions. If you do not agree to these terms, you may not use our website or services.
+                    By accessing and using FutureFlow, you accept and agree to be bound by these terms and conditions. If you do not agree to these terms, you may not use our website or services.
                 </p>
 
                 <h2 className="text-xl font-medium mt-12">
                     Changes to Terms
                 </h2>
                 <p className="mt-8 text-muted-foreground">
-                    Troika Hub reserves the right to modify these terms at any time. We will notify you of any changes by updating the &quot;Last updated&quot; date at the top of this page. Your continued use of our website and services after any modifications indicates your acceptance of the new terms.
+                    FutureFlow reserves the right to modify these terms at any time. We will notify you of any changes by updating the &quot;Last updated&quot; date at the top of this page. Your continued use of our website and services after any modifications indicates your acceptance of the new terms.
                 </p>
 
                 <h2 className="text-xl font-medium mt-12">
@@ -38,7 +38,7 @@ const TermsPage = () => {
                     Eligibility
                 </h3>
                 <p className="mt-8">
-                    To use Troika Hub, you must be at least 18 years old and capable of entering into a binding contract.
+                    To use FutureFlow, you must be at least 18 years old and capable of entering into a binding contract.
                 </p>
 
                 <h3 className="text-lg mt-8">
@@ -56,11 +56,11 @@ const TermsPage = () => {
                     Acceptable Use
                 </h3>
                 <div className="mt-8">
-                    You agree not to use Troika Hub for any unlawful or prohibited activities, including but not limited to:
+                    You agree not to use FutureFlow for any unlawful or prohibited activities, including but not limited to:
                     <ul className="list-disc text-muted-foreground ml-8">
                         <li>Uploading or sharing content that is offensive, harmful, or violates any laws.</li>
                         <li>Using the service to distribute spam or malicious content.</li>
-                        <li>Attempting to gain unauthorized access to other user accounts or Troika Hub&apos;s systems.</li>
+                        <li>Attempting to gain unauthorized access to other user accounts or FutureFlow&apos;s systems.</li>
                     </ul>
                 </div>
 
@@ -72,14 +72,14 @@ const TermsPage = () => {
                     Content Ownership
                 </h3>
                 <p className="mt-8 text-muted-foreground">
-                    All content provided on the Troika Hub platform, including text, graphics, logos, and software, is the property of Troika Hub or its content suppliers and is protected by intellectual property laws. You may not reuse content without proper authorization.
+                    All content provided on the FutureFlow platform, including text, graphics, logos, and software, is the property of FutureFlow or its content suppliers and is protected by intellectual property laws. You may not reuse content without proper authorization.
                 </p>
 
                 <h3 className="text-lg mt-8">
                     User-Generated Content
                 </h3>
                 <p className="mt-8 text-muted-foreground">
-                    You retain ownership of any content you create or upload to Troika Hub. By submitting content, you grant Troika Hub a non-exclusive, royalty-free license to use, reproduce, and display your content as necessary to provide our services.
+                    You retain ownership of any content you create or upload to FutureFlow. By submitting content, you grant FutureFlow a non-exclusive, royalty-free license to use, reproduce, and display your content as necessary to provide our services.
                 </p>
 
                 <h2 className="text-xl font-medium mt-12">
@@ -94,7 +94,7 @@ const TermsPage = () => {
                     Termination of Services
                 </h2>
                 <p className="mt-8 text-muted-foreground">
-                    Troika Hub reserves the right to suspend or terminate your account at any time, with or without notice, for any reason, including but not limited to violation of these terms.
+                    FutureFlow reserves the right to suspend or terminate your account at any time, with or without notice, for any reason, including but not limited to violation of these terms.
                 </p>
 
                 <h2 className="text-xl font-medium mt-12">
@@ -105,14 +105,14 @@ const TermsPage = () => {
                     No Warranties
                 </h3>
                 <p className="mt-8 text-muted-foreground">
-                    Troika Hub is provided on an &quot;as is&quot; and &quot;as available&quot; basis. We do not warrant that the service will be uninterrupted, error-free, or free from viruses or other harmful components.
+                    FutureFlow is provided on an &quot;as is&quot; and &quot;as available&quot; basis. We do not warrant that the service will be uninterrupted, error-free, or free from viruses or other harmful components.
                 </p>
 
                 <h3 className="text-lg mt-8">
                     Limitation of Liability
                 </h3>
                 <p className="mt-8 text-muted-foreground">
-                    In no event shall Troika Hub be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of the service.
+                    In no event shall FutureFlow be liable for any indirect, incidental, special, or consequential damages arising out of or in connection with your use of the service.
                 </p>
 
                 <h2 className="text-xl font-medium mt-12">
@@ -126,11 +126,11 @@ const TermsPage = () => {
                     Contact Us
                 </h2>
                 <p className="mt-8 text-muted-foreground">
-                    If you have any questions or concerns about these Terms and Conditions, please contact us at support@troikahub.tech.
+                    If you have any questions or concerns about these Terms and Conditions, please contact us at support@FutureFlowhub.tech.
                 </p>
 
                 <p className="mt-8 font-medium">
-                    By using Troika Hub, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions.
+                    By using FutureFlow, you acknowledge that you have read, understood, and agree to be bound by these terms and conditions.
                 </p>
             </AnimationContainer>
         </MaxWidthWrapper>

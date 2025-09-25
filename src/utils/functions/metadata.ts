@@ -2,23 +2,23 @@ import { Metadata } from "next";
 
 export const generateMetadata = ({
     title = "FutureFlow - Crafting Digital Solutions with Precision and Creativity",
-    description = "Troika Hub - Where ideas come to life with precision and creativity. Explore our innovative projects and services.",
-    image = "/Troika_meta_data_picture.png",
+    description = "FutureFlow - Where ideas come to life with precision and creativity. Explore our innovative projects and services.",
+    image = "/FutureFlow_meta_data_picture.png",
     icons = [
         {
             rel: "apple-touch-icon",
             sizes: "32x32",
-            url: "/apple-touch-icon.png"
+            url: "/FutureFlow_Logo.png"
         },
         {
-            rel: "icon",
+            rel: "svg",
             sizes: "32x32",
-            url: "/favicon-32x32.png"
+            url: "/FutureFlow_Logo.png"
         },
         {
             rel: "icon",
             sizes: "16x16",
-            url: "/favicon-16x16.png"
+            url: "/FutureFlow_Logo.png"
         }
     ]
 }: {
@@ -46,6 +46,6 @@ export const generateMetadata = ({
             index: true, 
             follow: true 
         },
-        metadataBase: new URL("https://troikahub.tech")
+        metadataBase: new URL("https://FutureFlow.tech")
     };
 };

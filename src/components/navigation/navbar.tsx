@@ -19,6 +19,7 @@ import MaxWidthWrapper from "../global/max-width-wrapper";
 import MobileNavbar from "./mobile-navbar";
 import AnimationContainer from "../global/animation-container";
 import Image from 'next/image';
+import { Icons } from "../global/icons";
 
 const Navbar = () => {
 
@@ -50,14 +51,8 @@ const Navbar = () => {
                 <MaxWidthWrapper className="flex items-center justify-between">
                     <div className="flex items-center space-x-12">
                         <Link href="/#home">
-                            <span className="text-lg font-bold font-heading !leading-none flex items-center">
-                                <Image
-                                    src="/icons/logo.png"
-                                    alt="Logo"
-                                    width={32}
-                                    height={32}
-                                    className="h-8 w-8 mr-2 filter invert"
-                                />
+                            <span className="text-lg font-bold font-heading !leading-none flex items-center gap-2">
+                                <Icons.logo className="mr-2" />
                                 FutureFlow
                             </span>
                         </Link>
@@ -66,7 +61,7 @@ const Navbar = () => {
                             <NavigationMenuList>
                                 {NAV_LINKS.map((link) => (
                                     <NavigationMenuItem key={link.title}>
-                                        {link.menu ? (
+                                        {/* {link.menu ? (
                                             <>
                                                 <NavigationMenuTrigger>{link.title}</NavigationMenuTrigger>
                                                 <NavigationMenuContent>
@@ -105,13 +100,13 @@ const Navbar = () => {
                                                     </ul>
                                                 </NavigationMenuContent>
                                             </>
-                                        ) : (
-                                            <Link href={link.href} legacyBehavior passHref>
-                                                <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-                                                    {link.title}
-                                                </NavigationMenuLink>
-                                            </Link>
-                                        )}
+                                        ) : ( */}
+                                        <Link href={link.href} legacyBehavior passHref>
+                                            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                                                {link.title}
+                                            </NavigationMenuLink>
+                                        </Link>
+                                        {/* )} */}
                                     </NavigationMenuItem>
                                 ))}
                             </NavigationMenuList>
@@ -128,9 +123,9 @@ const Navbar = () => {
                             </div>
                         ) : (
                             <div className="flex items-center gap-x-4">
-                                <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=futureflow.dev.2025@gmail.com" className={buttonVariants({ size: "sm", variant: "ghost" })}>
+                                {/* <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=futureflow.dev.2025@gmail.com" className={buttonVariants({ size: "sm", variant: "ghost" })}>
                                     Wishlist
-                                </Link>
+                                </Link> */}
                                 <Link href="https://mail.google.com/mail/?view=cm&fs=1&to=futureflow.dev.2025@gmail.com" className={buttonVariants({ size: "sm", })}>
                                     Get in Touch
                                     <ZapIcon className="size-3.5 ml-1.5 text-orange-500 fill-orange-500" />

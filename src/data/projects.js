@@ -1,22 +1,22 @@
 const projects = [
   {
-    id: 1,
-    title: "Cyber Security Learning Platform - SkodCyber",
+    id: 6,
+    title: "Rainbox: AI-Powered Newsletter Reader",
     description:
-      "A fully-fledged cyber security education platform designed for learners to enhance their skills through video-based learning, interactive quizzes, structured modules, and insightful blogs. Users can progress through courses, test their understanding with assessments, and stay updated with the latest in cyber security.",
-    image: "/assets/projectSkod.png",
+      "Rainbox is a thoughtfully designed newsletter reader app built for power readers. It offers a clean, focused inbox just for newsletters, and integrates features like Gmail/Outlook sync, mobile apps, a dedicated email, AI-generated summaries, and text-to-speech. Designed as a more affordable and user-centric alternative to Readwise Reader.",
+    image: "/assets/rainbox.jpg",
     technologies: [
-      "React",
-      "Next.js",
-      "MongoDB",
+      "React Native",
+      "Firebase",
+      "Node.js",
+      "AI APIs",
       "Tailwind CSS",
-      "Socket.io",
-      "Cloudinary",
     ],
-    category: "EdTech / Cyber Security",
-    borderColor: "from-red-500 to-amber-600",
-    live: "https://skod-cyber.vercel.app/",
+    category: "Productivity / AI Tools",
+    borderColor: "from-sky-500 to-purple-600",
+    live: "https://rainbox-app-seven.vercel.app",
   },
+
   {
     id: 2,
     title: "Upskill Academy – Professional IT Training Platform",
@@ -29,8 +29,37 @@ const projects = [
     live: "https://upskilldigitalacademy.vercel.app/",
   },
   {
+    id: 7,
+    title: "Component 101: Parts Search + Chrome Extension",
+    description:
+      "Component 101 is a subdomain project developed for the components-radar ecosystem. We implemented frontend features by integrating with an existing database and developed a Chrome extension that allows users to search for electronic components directly from any page across the Component101 network, streamlining component sourcing.",
+    image: "/assets/components101.jpg",
+    technologies: ["React.js", "Chrome Extension API", "MongoDB", "Express.js"],
+    category: "Electronics / Developer Tools",
+    borderColor: "from-green-400 to-blue-600",
+    live: "https://components101.com/resistors",
+  },
+  {
+    id: 8,
+    title: "DriveNow: Car Booking Platform MVP",
+    description:
+      "DriveNow is a minimum viable product (MVP) built for a client to streamline car booking experiences. The platform features an interactive map to browse available cars, real-time data updates, multilingual support, and secure payment integration. Designed with a focus on speed, accessibility, and ease of use for users across regions.",
+    image: "/assets/carbooking.jpg",
+    technologies: [
+      "React.js",
+      "Node.js",
+      "Socket.io",
+      "MongoDB",
+      "Google Maps API",
+      "Stripe",
+    ],
+    category: "Mobility / Real-Time Platforms",
+    borderColor: "from-teal-500 to-cyan-600",
+    live: "https://github.com/PradeepKundekar0101/CarBookingFE",
+  },
+  {
     id: 3,
-    title: "MediCare – Hospital Management System",
+    title: "MediCare - Hospital Management System",
     description:
       "MediCare is a comprehensive hospital management system built using the MERN stack. It streamlines hospital operations with secure authentication, appointment scheduling, patient records, real-time doctor-patient communication, and a powerful admin dashboard. Designed for scalability and ease of use, MediCare enhances healthcare efficiency and improves the overall patient experience.",
     image: "/assets/medicare.png",
@@ -55,6 +84,23 @@ const projects = [
     category: "Recruitment Tech / Automation",
     borderColor: "from-rose-500 to-indigo-600",
     live: "https://smartrecruit.vercel.app/",
+  }, {
+    id: 1,
+    title: "Cyber Security Learning Platform - SkodCyber",
+    description:
+      "A fully-fledged cyber security education platform designed for learners to enhance their skills through video-based learning, interactive quizzes, structured modules, and insightful blogs. Users can progress through courses, test their understanding with assessments, and stay updated with the latest in cyber security.",
+    image: "/assets/projectSkod.png",
+    technologies: [
+      "React",
+      "Next.js",
+      "MongoDB",
+      "Tailwind CSS",
+      "Socket.io",
+      "Cloudinary",
+    ],
+    category: "EdTech / Cyber Security",
+    borderColor: "from-red-500 to-amber-600",
+    live: "https://skod-cyber.vercel.app/",
   },
   {
     id: 5,
@@ -65,54 +111,10 @@ const projects = [
     technologies: ["HTML", "CSS", "JavaScript", "React.js"],
     category: "Frontend Clone / UI Design",
     borderColor: "from-yellow-400 to-pink-500",
-    live: "#",
+    live: "https://monely-landing-page.vercel.app/",
   },
-  {
-    id: 6,
-    title: "Rainbox: AI-Powered Newsletter Reader",
-    description:
-      "Rainbox is a thoughtfully designed newsletter reader app built for power readers. It offers a clean, focused inbox just for newsletters, and integrates features like Gmail/Outlook sync, mobile apps, a dedicated email, AI-generated summaries, and text-to-speech. Designed as a more affordable and user-centric alternative to Readwise Reader.",
-    image: "/assets/rainbox.jpg",
-    technologies: [
-      "React Native",
-      "Firebase",
-      "Node.js",
-      "AI APIs",
-      "Tailwind CSS",
-    ],
-    category: "Productivity / AI Tools",
-    borderColor: "from-sky-500 to-purple-600",
-    live: "#",
-  },
-  {
-    id: 7,
-    title: "Component 101: Parts Search + Chrome Extension",
-    description:
-      "Component 101 is a subdomain project developed for the components-radar ecosystem. We implemented frontend features by integrating with an existing database and developed a Chrome extension that allows users to search for electronic components directly from any page across the Component101 network, streamlining component sourcing.",
-    image: "/assets/components101.jpg",
-    technologies: ["React.js", "Chrome Extension API", "MongoDB", "Express.js"],
-    category: "Electronics / Developer Tools",
-    borderColor: "from-green-400 to-blue-600",
-    live: "#",
-  },
-  {
-    id: 8,
-    title: "DriveNow: Car Booking Platform MVP",
-    description:
-      "DriveNow is a minimum viable product (MVP) built for a client to streamline car booking experiences. The platform features an interactive map to browse available cars, real-time data updates, multilingual support, and secure payment integration. Designed with a focus on speed, accessibility, and ease of use for users across regions.",
-    image: "/assets/carbooking.jpg",
-    technologies: [
-      "React.js",
-      "Node.js",
-      "Socket.io",
-      "MongoDB",
-      "Google Maps API",
-      "Stripe",
-    ],
-    category: "Mobility / Real-Time Platforms",
-    borderColor: "from-teal-500 to-cyan-600",
-    live: "#",
-  },
+
+
   {
     id: 9,
     title: "TripBud: Hotel And Flight Booking Platform",
@@ -130,7 +132,7 @@ const projects = [
     description:
       "A modern and responsive web application designed to simplify doctor-patient interactions by allowing users to easily book medical appointments online. Patients can browse available doctors, view their profiles and availability, and schedule consultations with just a few clicks.",
     image: "/assets/manashakti.png",
-    technologies: ["React.js","Tailwind CSS"],
+    technologies: ["React.js", "Tailwind CSS"],
     category: "Mobility / Real-Time Platforms",
     borderColor: "from-teal-500 to-cyan-600",
     live: "https://manashakti.info/",
