@@ -100,40 +100,41 @@
 // export const WORKSPACE_LIMIT = 2;
 export const PLANS = [
   {
-    name: "Co-Founder",
-    info: "Frontend & Mobile Developer",
-    price: {
-      monthly: "Tej Hagargi",
-      yearly: "Tej Hagargi",
-    },
-    Products: [
-      { text: "Frontend & React Native Developer" },
-      { text: "1.5+ Years of Experience", tooltip: "Skilled in crafting responsive and interactive UIs for web and mobile" },
-      { text: "Projects Built", tooltip: "3D landing pages, product showcases, and dynamic UI animations" },
-      { text: "Mobile Development", tooltip: "React Native (Expo), mobile-first design systems" },
-      { text: "Web Development", tooltip: "Next.js, TypeScript, Tailwind CSS, Framer Motion" },
-      { text: "Tech Stack", tooltip: "React, React Native, Next.js, Tailwind, Three.js, Blender, Git, Figma" },
-    ],
-    btn: {
-      text: "Contact",
-      href: "https://www.linkedin.com/in/tej-hagargi-/",
-      variant: "default",
-    },
+  name: "",
+  info: "",
+  price: {
+    monthly: "Tej Hagargi",
+    yearly: "Tej Hagargi",
   },
+  Products: [
+    { text: "Full Stack Developer & Cloud" },
+    { text: "2+ Years of Freelance & Internship Experience", tooltip: "Worked on diverse projects covering frontend, backend, and cloud" },
+    { text: "Projects Built", tooltip: "RAG chatbots, scalable APIs, 3D landing pages, and dynamic UI systems" },
+    { text: "Web Development", tooltip: "React, Next.js, TypeScript, Tailwind CSS, Framer Motion" },
+    { text: "Cloud & Deployment", tooltip: "AWS (EC2, S3, Lambda, CloudFront), Firebase, Vercel" },
+    { text: "Backend & APIs", tooltip: "Node.js, Express, REST APIs" },
+    { text: "Tech Stack", tooltip: "React, React Native, Next.js, Node.js, Tailwind, Git" },
+  ],
+  btn: {
+    text: "Contact",
+    href: "https://www.linkedin.com/in/tej-hagargi-/",
+    variant: "default",
+  },
+},
   {
-    name: "Founder",
-    info: "Backend & Cloud Developer",
+    name: "",
+    info: "",
     price: {
-      monthly: "Sugandh R",
-      yearly: "Sugandh R",
+      monthly: "Sugandh Revankar",
+      yearly: "Sugandh Revankar",
     },
     Products: [
-      { text: "Full Stack & Cloud Developer" },
+      { text: "Full Stack Developer ,GenAI & Cloud" },
       { text: "2+ Years of Experience", tooltip: "Expertise in building robust backend systems and deploying scalable apps" },
       { text: "Projects Built", tooltip: "Inquirix, Optix, Conferix, and multiple SaaS products" },
       { text: "Cloud & DevOps", tooltip: "Worked with AWS, CI/CD pipelines, Docker, and deployment automation" },
-      { text: "Web & API Development", tooltip: "Secure auth systems, REST/GraphQL APIs, serverless functions" },
-      { text: "Tech Stack", tooltip: "Next.js, Node.js, TRPC, PostgreSQL, TypeScript, AWS, Docker, GitHub Actions" },
+      { text: "Web & API Development", tooltip: "Secure auth systems, REST APIs, serverless functions" },
+      { text: "Tech Stack", tooltip: "Next.js, Node.js, PostgreSQL, TypeScript, AWS, Docker" },
     ],
     btn: {
       text: "Contact",
@@ -142,8 +143,8 @@ export const PLANS = [
     },
   },
   {
-    name: "Co-Founder",
-    info: "Full Stack Web & App Developer",
+    name: "",
+    info: "",
     price: {
       monthly: "Ganesh Koparde",
         yearly: "Ganesh Koparde",
@@ -162,6 +163,26 @@ export const PLANS = [
       variant: "default",
     },
   },
+  {
+  name: "",
+  info: "",
+  price: {
+    monthly: "Prathamesh Renake",
+    yearly: "Prathamesh Renake",
+  },
+  Products: [
+    { text: "MERN Stack Developer , AI & Cloud" },
+    { text: "AI Projects", tooltip: "Built MedGenie – an AI health assistant with Gemini AI integration, reminders, and community blogs" },
+    { text: "Web Development", tooltip: "Developed interactive apps like Mythical Creature using HTML, CSS, and JavaScript" },
+    { text: "Technical Skills", tooltip: "JavaScript, Java, Python, React.js, Next.js, Node.js, Express.js, TypeScript" },
+    { text: "Databases & Cloud", tooltip: "MongoDB, SQL, AWS, Docker, Git, Postman" },
+  ],
+  btn: {
+    text: "Connect",
+    href: "https://www.linkedin.com/in/prathameshrenake/",
+    variant: "default",
+  },
+}
 ];
 
 
