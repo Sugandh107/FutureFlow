@@ -21,8 +21,8 @@ export const FAQ = [
   },
   {
     id: "item-5",
-    question: "Do you provide DevOps and cloud services?",
-    answer: "Absolutely. We offer complete DevOps setups including CI/CD pipelines, Dockerization, cloud hosting, and scaling via AWS, Vercel, or other platforms.",
+question: "Do you offer support for DevOps and Cloud solutions?",
+answer: "Yes, we provide end-to-end DevOps and cloud services, including  containerization with Docker, cloud hosting, monitoring, and application scaling on AWS, Vercel, and other leading platforms.",
   },
   {
     id: "item-6",

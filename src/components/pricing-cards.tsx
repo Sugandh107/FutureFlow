@@ -41,7 +41,7 @@ const PricingCards = () => {
                             <CardDescription>
                                 {plan.info}
                             </CardDescription>
-                            <h5 className="text-3xl font-semibold">
+                            <h5 className="text-2xl font-semibold">
                                 {plan.price.monthly}
                                 <span className="text-base text-muted-foreground font-normal">
                                     {plan.name !== "Free" ? "" : ""}

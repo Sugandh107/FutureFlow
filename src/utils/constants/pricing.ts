@@ -100,15 +100,15 @@
 // export const WORKSPACE_LIMIT = 2;
 export const PLANS = [
   {
-    name: "Co-Founder",
-    info: "Frontend & Mobile Developer",
+    name: "",
+    info: "",
     price: {
       monthly: "Tej Hagargi",
       yearly: "Tej Hagargi",
     },
     Products: [
       { text: "MERN Stack & App Developer " },
-      { text: "1.5+ Years of Experience", tooltip: "Skilled in crafting responsive and interactive UIs for web and mobile" },
+      { text: "2+ Years of Experience", tooltip: "Skilled in crafting responsive and interactive UIs for web and mobile" },
       { text: "8+ Projects Built", tooltip: "3D landing pages, product showcases, and dynamic UI animations" },
       { text: "Mobile Development", tooltip: "React Native (Expo), mobile-first design systems" },
       { text: "Web Development", tooltip: "React, Node.js, MongoDB, Express, Tailwind CSS, Framer Motion" },
@@ -146,7 +146,7 @@ export const PLANS = [
     info: "",
     price: {
       monthly: "Ganesh Koparde",
-        yearly: "Ganesh Koparde",
+      yearly: "Ganesh Koparde",
     },
     Products: [
       { text: "Full Stack Web/App Developer" },
@@ -163,57 +163,57 @@ export const PLANS = [
     },
   },
   {
-  name: "",
-  info: "",
-  price: {
-    monthly: "Prathamesh Renake",
-    yearly: "Prathamesh Renake",
+    name: "",
+    info: "",
+    price: {
+      monthly: "Prathamesh Renake",
+      yearly: "Prathamesh Renake",
+    },
+    Products: [
+      { text: "MERN Stack Developer , AI & Cloud" },
+      { text: "AI Projects", tooltip: "Built MedGenie – an AI health assistant with Gemini AI integration, reminders, and community blogs" },
+      { text: "7+ Projects Built", tooltip: "AI SaaS tools, resume builder, and full-stack apps" },
+      { text: "Web Development", tooltip: "Developed interactive apps like Mythical Creature using HTML, CSS, and JavaScript" },
+      { text: "Technical Skills", tooltip: "JavaScript, Java, Python, React.js, Next.js, Node.js, Express.js, TypeScript" },
+      { text: "Databases & Cloud", tooltip: "MongoDB, SQL, AWS, Docker, Git, Postman" },
+    ],
+    btn: {
+      text: "Connect",
+      href: "https://www.linkedin.com/in/prathameshrenake/",
+      variant: "default",
+    },
   },
-  Products: [
-    { text: "MERN Stack Developer , AI & Cloud" },
-    { text: "AI Projects", tooltip: "Built MedGenie – an AI health assistant with Gemini AI integration, reminders, and community blogs" },
-    { text: "Web Development", tooltip: "Developed interactive apps like Mythical Creature using HTML, CSS, and JavaScript" },
-    { text: "Technical Skills", tooltip: "JavaScript, Java, Python, React.js, Next.js, Node.js, Express.js, TypeScript" },
-    { text: "Databases & Cloud", tooltip: "MongoDB, SQL, AWS, Docker, Git, Postman" },
-  ],
-  btn: {
-    text: "Connect",
-    href: "https://www.linkedin.com/in/prathameshrenake/",
-    variant: "default",
-  },
-}
 ];
 
-
 export const PRICING_Products = [
-    {
-        text: "Shorten links",
-        tooltip: "Create shortened links",
-    },
-    {
-        text: "Track clicks",
-        tooltip: "Track clicks on your links",
-    },
-    {
-        text: "See top countries",
-        tooltip: "See top countries where your links are clicked",
-    },
-    {
-        text: "Upto 10 tags",
-        tooltip: "Add upto 10 tags to your links",
-    },
-    {
-        text: "Community support",
-        tooltip: "Community support is available for free users",
-    },
-    {
-        text: "Priority support",
-        tooltip: "Get priority support from our team",
-    },
-    {
-        text: "AI powered suggestions",
-        tooltip: "Get AI powered suggestions for your links",
-    },
+  {
+    text: "Shorten links",
+    tooltip: "Create shortened links",
+  },
+  {
+    text: "Track clicks",
+    tooltip: "Track clicks on your links",
+  },
+  {
+    text: "See top countries",
+    tooltip: "See top countries where your links are clicked",
+  },
+  {
+    text: "Upto 10 tags",
+    tooltip: "Add upto 10 tags to your links",
+  },
+  {
+    text: "Community support",
+    tooltip: "Community support is available for free users",
+  },
+  {
+    text: "Priority support",
+    tooltip: "Get priority support from our team",
+  },
+  {
+    text: "AI powered suggestions",
+    tooltip: "Get AI powered suggestions for your links",
+  },
 ];
 
 export const WORKSPACE_LIMIT = 2;
