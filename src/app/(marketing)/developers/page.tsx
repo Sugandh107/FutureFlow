@@ -40,12 +40,15 @@ const PricingPage = () => {
                             Here are some of the most common questions we get asked. If you have a question that isn&apos;t answered here, feel free to reach out to us.
                         </p>
                     </div>
-                    <div className="max-w-3xl mx-auto w-full mt-20">
+                    <div className="max-w-3xl mx-auto w-full mt-20 text-wrap">
                         <Accordion type="single" collapsible>
                             {FAQ.map((faq) => (
                                 <AccordionItem key={faq.id} value={faq.id}>
-                                    <AccordionTrigger>{faq.question}</AccordionTrigger>
-                                    <AccordionContent>{faq.answer}</AccordionContent>
+<AccordionTrigger>
+    <span className="block text-left text-base md:text-lg lg:text-xl font-medium break-words">
+        {faq.question}
+    </span>
+</AccordionTrigger>                                    <AccordionContent>{faq.answer}</AccordionContent>
                                 </AccordionItem>
                             ))}
                         </Accordion>
