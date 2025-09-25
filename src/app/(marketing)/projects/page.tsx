@@ -7,7 +7,7 @@ import projects from "@/data/projects"; // Assuming you have a projects data fil
 const EnterprisePage = () => {
 
     return (
-        <div className="overflow-x-hidden">
+        <div className="">
             <div className="flex flex-col items-center justify-center px-4">
                 <AnimationContainer delay={0.1}>
                     <div className="text-center mb-4">

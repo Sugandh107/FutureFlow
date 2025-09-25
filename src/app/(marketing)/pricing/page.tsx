@@ -44,22 +44,34 @@ interface Addon {
 
 // 2. Modal Component for scheduling a call
 const ScheduleCallModal: FC<ScheduleCallModalProps> = ({ isOpen, onClose }) => {
+    React.useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden"; // prevent scrolling
+        } else {
+            document.body.style.overflow = "auto";
+        }
+
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [isOpen]);
+
     if (!isOpen) return null;
 
     return (
-        // Backdrop
+        // Full-screen solid backdrop
         <div
-            className="fixed inset-0 bg-black/60 flex items-center justify-center z-[999]"
+            className="fixed inset-0 bg-black flex items-center justify-center z-[999]"
             onClick={onClose}
         >
             {/* Modal Panel */}
             <div
-                className="relative bg-gray-900/80 backdrop-blur-xl border border-primary/20 rounded-2xl p-8 shadow-2xl w-full max-w-md m-4 animate-fade-in-scale"
-                onClick={(e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation()} // Prevents modal from closing when clicking inside
+                className="relative bg-gray-900 rounded-2xl p-8 shadow-2xl w-full max-w-md mx-4 animate-fade-in-scale"
+                onClick={(e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation()}
             >
                 <button
                     onClick={onClose}
-                    className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
+                    className="absolute top-4 right-4 text-gray-300 hover:text-white transition-colors"
                     aria-label="Close modal"
                 >
                     <X className="w-6 h-6" />
@@ -68,7 +80,7 @@ const ScheduleCallModal: FC<ScheduleCallModalProps> = ({ isOpen, onClose }) => {
                 <h2 className="text-2xl font-bold text-center mb-4 text-white">
                     Schedule a Discovery Call
                 </h2>
-                <p className="text-center text-gray-400 mb-8">
+                <p className="text-center text-gray-300 mb-8">
                     Choose a duration that best fits your schedule. We are excited to connect with you!
                 </p>
 
@@ -77,8 +89,8 @@ const ScheduleCallModal: FC<ScheduleCallModalProps> = ({ isOpen, onClose }) => {
                         href="https://calendly.com/futureflow-dev-2025/new-meeting"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full text-center bg-gradient-to-r from-primary to-primary/80 text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
-                        onClick={onClose} // Optional: close modal on link click
+                        className="w-full text-center bg-primary text-primary-foreground px-6 py-3 rounded-xl font-semibold hover:shadow-lg hover:scale-[1.02] transition-all duration-300"
+                        onClick={onClose}
                     >
                         15 Minute Call
                     </a>
@@ -86,8 +98,8 @@ const ScheduleCallModal: FC<ScheduleCallModalProps> = ({ isOpen, onClose }) => {
                         href="https://calendly.com/futureflow-dev-2025/30min"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="w-full text-center border border-primary/30 text-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary/5 hover:border-primary/50 transition-all duration-300"
-                        onClick={onClose} // Optional: close modal on link click
+                        className="w-full text-center border border-primary text-primary px-6 py-3 rounded-xl font-semibold hover:bg-primary/80 hover:text-primary-foreground transition-all duration-300"
+                        onClick={onClose}
                     >
                         30 Minute Call
                     </a>
